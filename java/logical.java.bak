@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class logical
+{
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the charcter : ");
+		char ch = sc.next().CharAt(0);
+		String a = ((ch >='A' && ch =<'Z') || (ch >= 'a' && ch =< 'z'))?
+			((ch >= "A" && ch <= "Z")?(ch +"is UperCase Alphabet"):
+			(ch +"is LowerCase Aphabet")):((ch >= '0' && ch <= '9')?
+			(ch + " is a digit"):(ch + "is a special character"));
+		
+		System.out.println(a);
+	}
+		
+}
